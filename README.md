@@ -16,3 +16,5 @@ I have create one socket to read and and to write.
     run make clean
 
 ## How the program works
+
+![Animation](https://user-images.githubusercontent.com/42675180/148405632-6f92d204-3911-4069-a334-4609889b4ea6.gif)
