@@ -45,7 +45,6 @@ int main(int argc, const char *argv[])
 
     char *msg_to = (char *)malloc(sizeof(char) * MAX_MSG_SIZE);
     size_t msg_size = MAX_MSG_SIZE;
-    size_t size;
 
     do
     {
@@ -53,7 +52,7 @@ int main(int argc, const char *argv[])
         memset(msg, 0, MAX_MSG_SIZE);
         if (recvfrom(fd_2, msg, MAX_MSG_SIZE, 0, (struct sockaddr *)&des_addr, &len) == -1)
         {
-            perror("Receiver");
+            perror("failed while trying to receive");
             exit(EXIT_FAILURE);
         }
         printf("%s\n%s\n", NAME1, msg);
